@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.LabelStartButton = new System.Windows.Forms.Label();
             this.StartButton = new System.Windows.Forms.Button();
             this.GroupBindings = new System.Windows.Forms.GroupBox();
@@ -41,6 +42,7 @@
             this.SecNUD = new System.Windows.Forms.NumericUpDown();
             this.MinNUD = new System.Windows.Forms.NumericUpDown();
             this.RedLabel = new System.Windows.Forms.Label();
+            this.LabelCredits = new System.Windows.Forms.Label();
             this.GroupBindings.SuspendLayout();
             this.GroupVariables.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SecNUD)).BeginInit();
@@ -198,6 +200,15 @@
             this.RedLabel.TabIndex = 0;
             this.RedLabel.Text = "Red Time";
             // 
+            // LabelCredits
+            // 
+            this.LabelCredits.AutoSize = true;
+            this.LabelCredits.Location = new System.Drawing.Point(12, 183);
+            this.LabelCredits.Name = "LabelCredits";
+            this.LabelCredits.Size = new System.Drawing.Size(82, 13);
+            this.LabelCredits.TabIndex = 5;
+            this.LabelCredits.Text = "Icon by flaticon!";
+            // 
             // Settings
             // 
             this.AcceptButton = this.OKButton;
@@ -205,11 +216,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.CButton;
             this.ClientSize = new System.Drawing.Size(348, 213);
+            this.Controls.Add(this.LabelCredits);
             this.Controls.Add(this.GroupVariables);
             this.Controls.Add(this.OKButton);
             this.Controls.Add(this.CButton);
             this.Controls.Add(this.GroupBindings);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Settings";
@@ -223,6 +236,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.SecNUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinNUD)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -241,5 +255,6 @@
         private System.Windows.Forms.Label LabelMinutes;
         private System.Windows.Forms.Label LabelSeconds;
         private System.Windows.Forms.NumericUpDown SecNUD;
+        private System.Windows.Forms.Label LabelCredits;
     }
 }
